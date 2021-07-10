@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/fullpage.js/dist/fullpage.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <a href="#page1"
+        ><div class="gotop" id="gotop">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i></div
+      ></a>
+
+      <full-page :options="options" id="fullpage" ref="fullpage">
+        <div class="section" id="section-1">
+          <header class="header" id="header">
+            <nav>
+              <ul>
+                <li class="header-item1">
+                  <a href="#page1"
+                    >Home
+                    <div class="underline 1" id="underline1"></div
+                  ></a>
+                </li>
+                <li class="header-item2">
+                  <a href="#page2"
+                    >Intro
+                    <div class="underline 2" id="underline2"></div
+                  ></a>
+                </li>
+                <li class="header-item3">
+                  <a href="#page3"
+                    >Works
+                    <div class="underline 3" id="underline3"></div
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <div class="bigwave-zone">
+            <div class="bigwave1"></div>
+            <div class="bigwave2"></div>
+            <div class="bigwave3"></div>
+          </div>
+
+          <div class="intro-text-zone">
+            <h2 class="t1">HI THERE! I'M</h2>
+            <h1>EUNYOUNG</h1>
+            <h2>ever-growing FRONT-END DEVELOPER</h2>
+            <h2 class="h2-bottom">
+              안녕하세요 프론트엔드 개발자, 민 은영입니다 :)
+            </h2>
+            <span>
+              <a href="https://open.kakao.com/o/svfXn3md">
+                <i
+                  id="openkakao"
+                  title="open kakaotalk"
+                  class="fa fa-comments-o"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="https://github.com/danbom">
+                <i
+                  id="mygithub"
+                  title="github"
+                  class="fa fa-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+
+              <i
+                id="copybtn1"
+                onclick="copyToClipboard();"
+                title="copy email"
+                class="fa fa-envelope-open-o"
+                aria-hidden="true"
+              ></i>
+
+              <i
+                id="copybtn2"
+                onclick="copyToClipboard();"
+                title="copy phone-num"
+                class="fa fa-phone"
+                aria-hidden="true"
+              ></i>
+            </span>
+          </div>
+
+          <div class="scrolldown">
+            <span> </span>
+            <span> </span>
+          </div>
+        </div>
+
+        <div class="section" id="section-2">
+          <div class="cursor"></div>
+
+          <div class="bigwave-zone">
+            <div class="bigwave1"></div>
+            <div class="bigwave2"></div>
+            <div class="bigwave3"></div>
+            <div class="bigwave4"></div>
+            <div class="bigwave5"></div>
+            <div class="bigwave6"></div>
+          </div>
+          <div class="mini-text-zone">
+            <div class="mini-text">SELF INTRODUCTION</div>
+          </div>
+
+          <div class="text-zone">
+            <div class="big-text">
+              안녕하세요 <br />프론트엔드 개발자 민은영입니다
+            </div>
+            <div class="small-text">
+              저는 프론트엔드 개발자가 되고 싶은 이화여자대학교 컴퓨터공학
+              학부생이자, 게임 하기를 사랑하는 23살 민 은영입니다. <br /><br />
+              물론 게임하는 것을 좋아한다고 게임 개발에 관심이 있는 것은
+              아닙니다. 1학년 때 게임 개발 동아리에서 유니티를 체험해본 적
+              있지만,<br />
+              오픈소프트웨어 플랫폼이란 강의를 듣고 HTML, CSS 에 빠져 프론트엔드
+              개발의 길을 걷게 되었습니다.<br />
+              최근엔 게임보다 JS 공부하는 것에 맛들려 학기 중 보다 더 열심히
+              공부 중입니다!<br />
+              HTML, CSS, JS 를 제외하고도 React 개발 경험 또한 존재하고 앞으로
+              공부할 예정입니다. <br /><br />
+              마지막으로 집에 있는 것을 좋아하지만 불러주면 재밌게 놀 수 있는
+              INFP 이고, 검은 고양이 오디를 기르고 있습니다. <br />오디는 지금
+              마우스를 따라다니고 있는 귀여운 고양이입니다! :)
+            </div>
+          </div>
+          <div class="odi-zone" id="odi">
+            <img src="image/오디전신.png" />
+          </div>
+        </div>
+
+        <div class="section" id="now-working-section">
+          <div class="now-work-zone">
+            <div class="typing-txt1">NOW WORKING ...</div>
+            <img class="now-work-img" src="image/씨유레터목업.png" />
+            <div class="seeuletter-zone">
+              <div class="seeuletter-title">SEEYOU LETTER 2</div>
+              <div class="skill-zone1">
+                <div class="skill-item" id="skill-item1">HTML</div>
+
+                <div class="skill-item" id="skill-item2">CSS</div>
+
+                <div class="skill-item" id="skill-item3">JavaScript</div>
+              </div>
+              <div class="seeuletter-date">2021.07 -</div>
+              <div class="seeuletter-desc">
+                'SeeYou Letter' 는 당신에게 선물을 받는 듯한 설렘과 옛 기억을
+                꺼내보는 즐거움을 나누어드리고자 탄생했습니다. 오늘 나에게, 또
+                소중한 사람에게 편지를 쓰고, 1년 후에 받아보세요. 7월 1일에
+                달토끼 팀에 합류해 돌아온 SeeYou Letter 의 모바일 웹 서비스
+                프로젝트의 프론트엔드 개발자를 맡게 되었고 현재 기획 단계에
+                있습니다.
+              </div>
+            </div>
+
+            <div class="typing-txt2">RECENT WORK ...</div>
+            <img class="recent-work-img" src="image/공달목업.png" />
+            <div class="recent-zone">
+              <div class="recent-title">GONGDAL</div>
+              <div class="recent-date">2021.03 - 2021.06</div>
+              <div class="skill-zone2">
+                <div class="skill-item" id="skill-item1">HTML</div>
+
+                <div class="skill-item" id="skill-item2">CSS</div>
+
+                <div class="skill-item" id="skill-item3">JavaScript</div>
+              </div>
+              <div class="recent-desc">
+                'Gongdal' 은 2021년도 상반기 진행한 팀 프로젝트로 공모전을
+                준비하기 위한 일정 관리 웹사이트입니다. 저는 이 프로젝트에서
+                디자인과 대부분의 프론트엔드 개발을 맡았으며 학기가 끝난 지금도
+                계속해서 사용 후 코멘트를 보고 부족했던 부분을 개선하고 더 추가
+                하고 싶은 기능을 찾아 페이지를 더 성장시키고 있습니다. 이
+                프로젝트는 제 진로를 프론트엔드 개발자로 확신하게 해준 소중한
+                프로젝트입니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="now-wave1-1"></div>
+          <div class="now-wave1-2"></div>
+          <div class="now-wave2-1"></div>
+          <div class="now-wave2-2"></div>
+        </div>
+
+        <!-- <div class="section" id="section-3">
+
+                <div class="recent-work-zone">
+                    <div class="recent-work-text">
+                        <div class="recent-work-text-small">RECENT WORK</div>
+                        <div class="recent-work-deco"></div>
+                        <div class="recent-work-text-big">HUMAN-COMPUTER INTERACTIVE PROJECT</div> 
+                        <div class="main-desc">gongdal</div>
+                    </div>
+                    <div class="recent-work-desc">
+                        
+                        <div class="sub-desc"><span>💡</span>공모전 일정 관리 웹 프로젝트</div>
+                        
+                        <div class="long-desc">'Gongdal'은 2021년도 상반기 인간과 컴퓨터의 상호작용 강의를 수강하며 진행한 팀 프로젝트입니다. 이름은 단순히 공모전 달력을 줄여 공달이라 지었고 그에 맞게 공모전을 준비하기 위한 일정 관리 웹사이트를 만들었습니다. 저는 이 프로젝트에서 디자인과 대부분의 프론트엔드 개발을 맡았으며 학기가 끝난 지금도 계속해서 사용 후 코멘트를 보고 부족했던 부분을 개선하고 더 추가 하고 싶은 기능을 찾아 페이지를 더 성장시키고 있습니다. 이 프로젝트는 제 진로를 프론트엔드 개발자로 확신하게 해준 소중한 프로젝트입니다.
+                        </div>
+                    </div>
+                    <div class="recent-work-img-zone">
+                        <div class="circle">
+                            <div class="wave1"></div>
+                            <div class="wave2"></div>
+                            <div class="wave3"></div>
+                            <div class="wave4"></div>
+                            <div class="circle-text">
+                            <a href="https://danbom.github.io/NEW-HCI-gongdal/HCI-gongdal/gongdal_ver1.1/views/home.html"><span class="span-ani" style="color: #fff; font-size: 1.6rem; font-weight: 500;">go to website </span></a></div></div>
+                        
+                        <div class="recent-work-img">
+                            <img class="laptop" src="image/공달노트북.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-work-img"></div>
+                
+
+            </div> -->
+
+        <div class="section" id="section-4">
+          <!-- <div class="nav">
+            <div class="nav-alert">
+              <span
+                >double click this!
+                <i class="fa fa-mouse-pointer" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="navigation">
+              <div class="toggle"></div>
+              <ul>
+                <li>
+                  <a href="#page4">
+                    <span class="icon"
+                      ><i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                    ></span>
+                    <span class="title">gongdal</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4/1">
+                    <span class="icon"
+                      ><i class="fa fa-music" aria-hidden="true"></i
+                    ></span>
+                    <span class="title">airang</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4/2">
+                    <span class="icon"
+                      ><i class="fa fa-film" aria-hidden="true"></i
+                    ></span>
+                    <span class="title">sonemary</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4/3">
+                    <span class="icon"
+                      ><i class="fa fa-user" aria-hidden="true"></i
+                    ></span>
+                    <span class="title">rodang</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4/4">
+                    <span class="icon"
+                      ><i class="fa fa-paw" aria-hidden="true"></i
+                    ></span>
+                    <span class="title">well-bing pet</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="slide-zone">
+            <div class="slide active" id="slide1">
+              <div class="gongdal">
+                <div class="works-date">2021.03 - 2021.06</div>
+                <div class="works-title">gongdal</div>
+                <div class="works-desc">
+                  공달 사이트는 지금 진행 중인 공모전들의 정보와 마감 날짜를
+                  공유하고 선택한 공모전들의 일정을 정리해 보여줍니다. 또한 기간
+                  별 체크리스트를 통해 일정을 더 체계적이고 효율적으로 관리할 수
+                  있으며 포트폴리오 페이지에선 자신의 공모전 수상이력, 참여이력
+                  등을 보고 다른 사람과 공유할 수 있습니다.
+                </div>
+                <div class="works-detail">
+                  <div class="works-detail-btn1">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i>See
+                      details</span
+                    >
+                  </div>
+                </div>
+                <div class="gongdal-zone">
+                  <div class="gongdal-img-zone">
+                    <img src="image/공달목업2.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="works-popup">
+                <div class="popup-zone1">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/danbom/NEW-HCI-gongdal">
+                        <div class="li">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                          <div>github</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://danbom.github.io/NEW-HCI-gongdal/HCI-gongdal/gongdal_ver1.1/views/home.html"
+                      >
+                        <div class="li">
+                          <i class="fa fa-desktop" aria-hidden="true"></i>
+                          <div>address</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="works-popup">
+                <div class="popup-zone2">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/danbom/AIrang">
+                        <div class="li">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                          <div>github</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=OROdh0IuZTo&ab_channel=%EC%9C%BC%EB%85%95"
+                      >
+                        <div class="li">
+                          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                          <div>Youtube</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="airang">
+                <div class="works-date">2020.09 ~ 2021.06</div>
+                <div class="works-title">airang</div>
+                <div class="works-desc">
+                  아이랑 프로젝트는 마젠타 API를 활용한 작곡, GPT-3를 활용한
+                  작사를 통해 누구나 쉽게 동요를 제작할 수 있는 웹 사이트입니다.
+                  지금은 사용이 불가하지만 동요를 제작할 때 밝은 분위기와 어두운
+                  분위기 중 사용자가 선택할 수 있으며 제작 후엔 다른 사람들과
+                  공유할 수 있습니다.
+                </div>
+                <div class="works-detail">
+                  <div class="works-detail-btn2">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i>See
+                      details</span
+                    >
+                  </div>
+                </div>
+                <div class="airang-zone">
+                  <div class="airang-img-zone">
+                    <img src="image/아이랑목업.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide3">
+              <div class="works-popup3">
+                <div class="popup-zone3">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/danbom/SONEMARY">
+                        <div class="li">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                          <div>github</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=LD0oCE0AnDI&ab_channel=%EC%9C%BC%EB%85%95"
+                      >
+                        <div class="li">
+                          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                          <div>Youtube</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sonemary">
+                <div class="works-date">2020.09 - 2020.12</div>
+                <div class="works-title">sonemary</div>
+                <div class="works-desc">
+                  소네마리 프로젝트는 php, css, js를 활용하여 제작된 웹사이트로
+                  장르별, 인기순, 최신순으로 영화가 정렬되어있는 페이지들이
+                  존재하며 원하는 영화를 직접 검색해볼 수 있습니다. 또한 영화의
+                  상세 정보에서 전문가들과 일반 사용자들의 리뷰를 분리하여 보고
+                  직접 리뷰를 작성할 수 있습니다.
+                </div>
+                <div class="works-detail">
+                  <div class="works-detail-btn3">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i>See
+                      details</span
+                    >
+                  </div>
+                </div>
+                <div class="sonemary-img-zone">
+                  <div class="sonemary-left-img-zone">
+                    <img src="image/소네마리움짤.gif" />
+                  </div>
+
+                  <!-- <div class="sonemary-right-img-zone">
+                                    <span><i class="fa fa-desktop" aria-hidden="true"></i>Other Page Screens</span>
+                                    <div class="sonemary-right-img-zone-grid">
+                                        <div class="sonemary-image">
+                                            <img class="sonemary-image-img" src="image/소네마리1.png">
+                                        </div>
+                                        <div class="sonemary-image">
+                                            <img class="sonemary-image-img" src="image/소네마리2.png">
+                                        </div>
+                                        <div class="sonemary-image">
+                                            <img class="sonemary-image-img" src="image/소네마리3.png">
+                                        </div>
+                                        <div class="sonemary-image">
+                                            <img class="sonemary-image-img" src="image/소네마리4.png">
+                                        </div>
+                                    </div>
+                                    
+                                </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide4">
+              <div class="works-popup4">
+                <div class="popup-zone4">
+                  <ul>
+                    <li>
+                      <a href="https://youtu.be/H2ozH0vXRQE">
+                        <div class="li">
+                          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                          <div>Youtube</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rodang">
+                <div class="works-date">2019.05 - 2019.08</div>
+                <div class="works-title">rodang</div>
+                <div class="works-desc">
+                  2019년 LEAF 소그룹 활동으로 진행한 로당 프로젝트는 신중년을
+                  위한 지역 커뮤니티 애플리케이션 프로토타입입니다. 사용자들은
+                  취미, 건강, 꿈을 위한 활동을 같은 동네에 거주하는 사람들과
+                  공유하고 함께 즐길 수 있습니다. 게시글 형태만이 아닌 채팅방도
+                  존재해 더 다양한 대화를 나눌 수도 있습니다.
+                </div>
+                <div class="works-detail">
+                  <div class="works-detail-btn4">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i>See
+                      details</span
+                    >
+                  </div>
+                </div>
+                <div class="rodang-img-zone">
+                  <div class="rodang-img">
+                    <img src="image/로당목업.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide5">
+              <div class="works-popup5">
+                <div class="popup-zone5">
+                  <ul>
+                    <li>
+                      <a href="https://youtu.be/j-VOal9Fv8o">
+                        <div class="li">
+                          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                          <div>Youtube</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="well-bing-pet">
+                <div class="works-date">2018.03 - 2018.06</div>
+                <div class="works-title">well-bing pet</div>
+                <div class="works-desc">
+                  웰빙펫 프로젝트는 반려동물을 기르는, 흔히 말하는 집사들을 위한
+                  애플리케이션 프로토타입입니다. 이 애플리케이션에선 특히 동물
+                  병원에 대한 솔직한 리뷰가 특징이며 이는 영수증 첨부로 인증하고
+                  있습니다. 그 외에도 병원의 위치, 병원에 대한 정보 등을
+                  제공합니다.
+                </div>
+                <div class="works-detail">
+                  <div class="works-detail-btn5">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i>See
+                      details</span
+                    >
+                  </div>
+                </div>
+
+                <!-- <div class="well-bing-svg-zone">
+                                <img src="image/dog.svg">
+                            </div> -->
+                <div class="well-bing-img-zone">
+                  <img src="image/웰빙펫목업.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </full-page>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <!-- 얘 때문에 PARALLAX가 안먹는데.. -->
+    <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.js"></script>
+    <script src="../main/main.js"></script>
+
+    <script>
+      let odi = document.getElementById("odi");
+      let x;
+
+      window.addEventListener("mousemove", odimove);
+
+      function odimove(e) {
+        odi.style.left = e.pageX * 0.7 + "px";
+      }
+    </script>
+
+    <script>
+      let mouseCursor = document.querySelector(".cursor");
+
+      window.addEventListener("scroll", cursor);
+      window.addEventListener("mousemove", cursor);
+
+      function cursor(e) {
+        mouseCursor.style.left = e.pageX + "px";
+        mouseCursor.style.top = e.pageY - scrollY + "px";
+      }
+    </script>
+
+    <script>
+      // ('#copybtn1').onclick(function() {
+      //   copyToClipboard('bear0369@naver.com');
+      //   alert('주소를 복사하였습니다');
+      // });
+
+      function copyToClipboard(val) {
+        var t = document.createElement("textarea");
+        document.body.appendChild(t);
+        t.value = val;
+        t.select();
+        document.execCommand("copy");
+        document.body.removeChild(t);
+      }
+
+      document.querySelector("#copybtn1").onclick = function () {
+        copyToClipboard("bear0369@naver.com");
+        alert("이메일이 클립보드에 복사되었습니다!");
+      };
+
+      document.querySelector("#copybtn2").onclick = function () {
+        copyToClipboard("01086532726");
+        alert("번호가 클립보드에 복사되었습니다!");
+      };
+    </script>
+
+    <script>
+      //   const navigation = document.querySelector(".navigation");
+      const navalert = document.querySelector(".nav-alert");
+      const toggle = document.querySelector(".toggle");
+      const popup1 = document.querySelector(".popup-zone1");
+      const popup2 = document.querySelector(".popup-zone2");
+      const popup3 = document.querySelector(".popup-zone3");
+      const popup4 = document.querySelector(".popup-zone4");
+      const popup5 = document.querySelector(".popup-zone5");
+      const circle = document.querySelector(".circle");
+      const circletext = document.querySelector(".circle-text");
+      const wave1 = document.querySelector(".wave1");
+      const wave2 = document.querySelector(".wave2");
+      const wave3 = document.querySelector(".wave3");
+      const wave4 = document.querySelector(".wave4");
+      const span = document.querySelector(".span-ani");
+
+      var underline1 = document.getElementById("underline1");
+      var underline2 = document.getElementById("underline2");
+      var underline3 = document.getElementById("underline3");
+      var underline4 = document.getElementById("underline4");
+
+      document.querySelector(".works-detail-btn1").onclick = function () {
+        popup1.classList.toggle("active");
+      };
+
+      document.querySelector(".works-detail-btn2").onclick = function () {
+        popup2.classList.toggle("active");
+      };
+
+      document.querySelector(".works-detail-btn3").onclick = function () {
+        popup3.classList.toggle("active");
+      };
+
+      document.querySelector(".works-detail-btn4").onclick = function () {
+        popup4.classList.toggle("active");
+      };
+
+      document.querySelector(".works-detail-btn5").onclick = function () {
+        popup5.classList.toggle("active");
+      };
+
+      // document.querySelector('.laptop').onmouseover = function() {
+      //     this.classList.toggle('active');
+      //     circle.classList.toggle('active');
+      //     circletext.classList.toggle('active');
+      //     wave1.classList.toggle('active');
+      //     wave2.classList.toggle('active');
+      //     wave3.classList.toggle('active');
+      // }
+
+      // document.querySelector('.span-ani').onmouseover = function() {
+      //     wave4.classList.toggle('active');
+      // }
+
+      // document.querySelector('.span-ani').onmouseout = function() {
+      //     wave4.classList.toggle('active');
+      // }
+
+      document.querySelector(".header-item1").onmouseover = function () {
+        underline1.style.transform = "translateY(15px)";
+        this.style.transform = "translateY(-5px)";
+        underline1.style.background = "#887ed685";
+      };
+
+      document.querySelector(".header-item1").onmouseout = function () {
+        underline1.style.transform = "translateY(0px)";
+        this.style.transform = "translateY(0px)";
+        underline1.style.background = "#88888810";
+      };
+
+      document.querySelector(".header-item2").onmouseover = function () {
+        this.style.transform = "translateY(-5px)";
+        underline2.style.transform = "translateY(15px)";
+        underline2.style.background = "#7678ed85";
+      };
+
+      document.querySelector(".header-item2").onmouseout = function () {
+        this.style.transform = "translateY(0px)";
+        underline2.style.transform = "translateY(0px)";
+        underline2.style.background = "#88888810";
+      };
+
+      document.querySelector(".header-item3").onmouseover = function () {
+        this.style.transform = "translateY(-5px)";
+        underline3.style.transform = "translateY(15px)";
+        underline3.style.background = "#f7b80185";
+      };
+
+      document.querySelector(".header-item3").onmouseout = function () {
+        this.style.transform = "translateY(0px)";
+        underline3.style.transform = "translateY(0px)";
+        underline3.style.background = "#88888810";
+      };
+
+      document.querySelector(".header-item4").onmouseover = function () {
+        this.style.transform = "translateY(-5px)";
+        underline4.style.transform = "translateY(15px)";
+        underline4.style.background = "#f1870185";
+      };
+
+      document.querySelector(".header-item4").onmouseout = function () {
+        this.style.transform = "translateY(0px)";
+        underline4.style.transform = "translateY(0px)";
+        underline4.style.background = "#88888810";
+      };
+
+      //   document.querySelector(".toggle").onmouseover = function () {
+      //     navalert.style.display = "block";
+      //     var toggleTop = toggle.getBoundingClientRect().top;
+      //     navalert.style.top = toggleTop - 40 + "px";
+      //     var toggleLeft = toggle.getBoundingClientRect().left;
+      //     navalert.style.left = toggleLeft + "px";
+      //   };
+
+      //   document.querySelector(".toggle").onmousedown = function () {
+      //     navalert.style.display = "none";
+      //   };
+
+      //   document.querySelector(".toggle").onmouseout = function () {
+      //     navalert.style.display = "none";
+      //   };
+
+      //   document.querySelector(".toggle").ondblclick = function () {
+      //     this.classList.toggle("active");
+      //     navigation.classList.toggle("active");
+      //   };
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script>
+      $(function () {
+        $(".navigation").draggable();
+      });
+    </script> -->
+  </body>
+</html>
