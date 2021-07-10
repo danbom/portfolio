@@ -773,8 +773,8 @@ header ul .header-item4 a:hover {
   transition: all 0.3s ease-out;
   opacity: 1;
   background: #f7b80150;
-  width: 300px;
-  height: 300px;
+  width: 15%;
+  height: 30%;
   border-radius: 44%;
   animation: drift 5000ms infinite linear;
   visibility: visible;
@@ -783,12 +783,12 @@ header ul .header-item4 a:hover {
 .now-wave1-2 {
   position: absolute;
   top: 30%;
-  left: 17.5%;
+  left: 17%;
   transition: all 0.3s ease-out;
   opacity: 1;
   background: #f7b80150;
-  width: 270px;
-  height: 270px;
+  width: 15%;
+  height: 30%;
   border-radius: 44%;
   animation: drift 8000ms infinite linear;
   visibility: visible;
@@ -797,28 +797,28 @@ header ul .header-item4 a:hover {
 .now-wave2-1 {
   position: absolute;
   top: 30%;
-  left: 67%;
+  left: 68%;
   transition: all 0.3s ease-out;
   opacity: 1;
   background: #8587f830;
-  width: 300px;
-  height: 300px;
+  width: 15%;
+  height: 30%;
   border-radius: 44%;
-  animation: drift 6000ms infinite linear;
+  animation: drift 5000ms infinite linear;
   visibility: visible;
 }
 
 .now-wave2-2 {
   position: absolute;
   top: 32%;
-  left: 68%;
+  left: 67%;
   transition: all 0.3s ease-out;
   opacity: 1;
   background: #8587f830;
-  width: 270px;
-  height: 270px;
+  width: 15%;
+  height: 30%;
   border-radius: 44%;
-  animation: drift 7000ms infinite linear;
+  animation: drift 8000ms infinite linear;
   visibility: visible;
 }
 
@@ -1860,7 +1860,7 @@ a:-webkit-any-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 9%;
 }
 
 .gongdal-img-zone {
